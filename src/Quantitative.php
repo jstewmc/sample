@@ -148,6 +148,17 @@ class Quantitative extends \Jstewmc\Sample\Sample
 	}
 	
 	/**
+	 * Returns the sample's range
+	 *
+	 * @return  int|float
+	 * @since  0.1.0
+	 */
+	public function range()
+	{
+		return $this->n() ? $this->max() - $this->min() : null;
+	}
+	
+	/**
 	 * Returns the sample's sum
 	 *
 	 * @return  int|float|null

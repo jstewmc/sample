@@ -6,7 +6,7 @@ namespace Jstewmc\Sample;
  * Tests for the Quantitative class
  */
 class QuantitativeTest extends \PHPUnit_Framework_TestCase
-{
+{	
 	/* !__construct() */
 	
 	/**
@@ -467,6 +467,32 @@ class QuantitativeTest extends \PHPUnit_Framework_TestCase
 		
 		$this->assertEquals(3, $sample->pop());
 		$this->assertEquals(2, $sample->n());
+		
+		return;
+	}
+	
+	
+	/* !range() */
+	
+	/**
+	 * range() should return null if observations do not exist
+	 */
+	public function test_range_returnsNull_ifObservationsDoNotExist()
+	{
+		return $this->assertNull((new Quantitative())->range());
+	}
+	
+	/**
+	 * range() should return number if observations do exist
+	 */
+	public function test_range_returnsNumber_ifObservationsDoExist()
+	{
+		$observations = [1, 2, 3];
+		
+		$sample = new Quantitative();
+		$sample->setObservations($observations);
+		
+		$this->assertEquals(2, $sample->range());
 		
 		return;
 	}
