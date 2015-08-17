@@ -49,7 +49,7 @@ This library supports two types of samples: a *quantitative* sample of numbers l
 However, the *quantitative* sample provides many more descriptive statistics than the *qualitative* sample:
 
 Statistic   | Quantitative | Qualitative
---------------------------------------
+----------- | ------------ | -----------
 n           | Yes          | Yes
 max         | Yes          | No
 min         | Yes          | No
@@ -66,7 +66,7 @@ deviation   | Yes          | No
 
 ## Author
 
-Jack Clayton [clayjs0@gmail.com](mailto:clayjs0@gmail.com)
+Jack Clayton ([clayjs0@gmail.com](mailto:clayjs0@gmail.com))
 
 
 ## Version
