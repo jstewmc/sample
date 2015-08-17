@@ -64,6 +64,11 @@ variance    | Yes          | No
 deviation   | Yes          | No
 
 
+## Usage
+
+To get a descriptive statistic listed in the table above, just append a method's parentheses `()` to the statistic's name. For example, to get a quantitative sample's mean just call `mean()`, to get a quantitative sample's max, just call `max()`, so on and so forth (sum squares is camel-cased as `sumSquares()`).
+
+
 ## Author
 
 Jack Clayton ([clayjs0@gmail.com](mailto:clayjs0@gmail.com))
